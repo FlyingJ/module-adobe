@@ -19,7 +19,7 @@
 #
 # === Authors
 #
-# Jason Harrington <jason@fnal.gov>
+# Author <author@domain.tld>
 #
 # === Copyright
 #
@@ -55,7 +55,7 @@ class adobe::package::adobereader {
     }
 
     # install the package
-    package {'AdobeReader_enu':
+    package { 'AdobeReader_enu':
         ensure  => 'latest',
         require => Yumrepo['adobereader-i386'],
     }
